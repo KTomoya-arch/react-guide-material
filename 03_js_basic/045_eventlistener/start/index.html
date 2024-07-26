@@ -1,13 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>開始時点コード</title>
+    <title>Threatening Alert</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <h1>開始時点コード</h1>
-    <button>クリック</button>
-    <script src="main.js"></script>
+    <div id="custom-alert" class="hidden">
+      <div class="alert-box">
+        <span id="alert-message"></span>
+        <button onclick="closeAlert()">OK</button>
+      </div>
+    </div>
+    <button onclick="showAlert('今すぐお金を振り込め！さもないと...')">
+      Show Threatening Alert
+    </button>
+    <script src="./main.js"></script>
   </body>
 </html>
