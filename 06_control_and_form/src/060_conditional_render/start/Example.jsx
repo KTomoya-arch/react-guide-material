@@ -19,9 +19,11 @@ const Example = () => {
             console.log(animal.indexOf(filterVal));
             return isMatch;
           })
-          .map((animal) => (
-            <li key={animal}>{animal}</li>
-          ))}
+          .map((animal) => {
+            return (
+              <li key={animal}>{animal === "Dog" ? animal + "⭐️" : animal}</li>
+            );
+          })}
       </ul>
     </>
   );
