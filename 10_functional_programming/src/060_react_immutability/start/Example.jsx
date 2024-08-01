@@ -8,13 +8,14 @@ const Child = (props) => {
   );
 };
 
-const Example = () => {
-  const [ state, setState ] = useState({ value: 0 });
+const Example = (props) => {
+  const [state, setState] = useState({ value: 0 });
+  props.state = { value: 1 };
 
   return (
     <>
       <div>
-        <Child state={state}/>
+        <Child state={state} />
       </div>
     </>
   );
