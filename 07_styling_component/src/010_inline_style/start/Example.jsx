@@ -1,31 +1,16 @@
-import { useState } from "react";
+import { useState } from "react"
 
 const Example = () => {
-  const [isSelected, setIsSelected] = useState(false);
+    const [isSelected, setIsSelected] = useState(false);
 
-  const clickHandler = () => setIsSelected((prev) => !prev);
-  const style = {
-    with: 120,
-    height: 60,
-    display: "block",
-    fontWeight: "bold",
-    borderRadius: 9999,
-    cursor: "pointer",
-    border: "none",
-    margin: "auto",
-    background: isSelected ? "pink" : "",
-  };
+    const clickHandler = () => setIsSelected(prev => !prev);
 
-  return (
-    <>
-      <button style={style} onClick={clickHandler}>
-        ボタン
-      </button>
-      <div style={{ textAlign: "center" }}>
-        {isSelected && "クリックされました。"}
-      </div>
-    </>
-  );
+    return (
+        <>
+            <button onClick={clickHandler}>ボタン</button>
+            <div>{isSelected && "クリックされました。"}</div>
+        </>
+    )
 };
 
 export default Example;

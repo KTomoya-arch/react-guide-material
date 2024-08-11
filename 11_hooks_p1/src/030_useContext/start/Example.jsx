@@ -1,10 +1,8 @@
 import Child from "./components/Child";
-import { createContext } from "react";
-// GrandChildに渡す
-export const MyContext = createContext("hello");
-// useContext
+
 const Example = () => {
-  return <Child />;
+  const value = 'hello'
+  return <Child value={value}/>;
 };
 
 export default Example;

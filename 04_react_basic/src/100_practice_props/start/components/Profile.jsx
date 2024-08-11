@@ -1,15 +1,7 @@
 import "./Profile.css";
 
-const Profile = ({ name, age, country }) => {
-  return (
-    <>
-      <div className="profile">
-        <p>{`Name: ${name}`}</p>
-        <p>{`Age: ${age}`}</p>
-        <p>{`Country: ${country}`}</p>
-      </div>
-    </>
-  );
+const Profile = (props) => {
+  return <div className="profile"></div>;
 };
 
 export default Profile;

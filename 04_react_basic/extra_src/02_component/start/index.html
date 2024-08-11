@@ -10,18 +10,7 @@
     <script type="text/babel">
       const appEl = document.querySelector("#app");
       const root = ReactDOM.createRoot(appEl);
-      // componentはJavaScriptの関数として表現される、下記を関数コンポーネントという
-      // function Example() {
-      //   return <h1>Hello React</h1>;
-      // }
-      const Example = () => {
-        return (
-          <div>
-            <h1>Hello Components</h1>
-          </div>
-        );
-      };
-      root.render(<Example />);
+      root.render(<h1>こんにちは</h1>);
     </script>
   </body>
 </html>

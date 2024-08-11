@@ -1,16 +1,10 @@
 const Example = () => {
-  const RADIO_COLLECTION = ["Apple", "Banana", "Cherry"];
   return (
-    <>
-      {RADIO_COLLECTION.map((value) => {
-        return (
-          <label>
-            <input type="radio" value={value} />
-            {value}
-          </label>
-        );
-      })}
-    </>
+    <p style={{ textAlign: "center" }}>
+      startフォルダの内容が表示されます。
+      <br />
+      練習用に使ってください！
+    </p>
   );
 };
 

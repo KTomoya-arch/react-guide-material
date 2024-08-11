@@ -1,5 +1,11 @@
-import Child from "./components/Child";
+import "./Example.css";
 
-const Example = () => <Child />;
+const Example = () => {
+  return (
+    <div className="component">
+      <h3>Hello Component</h3>
+    </div>
+  );
+};
 
 export default Example;
